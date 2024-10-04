@@ -1,0 +1,35 @@
+{
+  "name": "chat-server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "npm-run-all -p watch dev:nodemon",
+    "dev:nodemon": "nodemon dist/server.js",
+    "start": "node dist/server.js"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/express-session": "^1.18.0",
+    "@types/node": "^22.7.4",
+    "@types/socket.io": "^3.0.2",
+    "nodemon": "^3.1.7",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "http": "^0.0.1-security",
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.0",
+    "ts-node": "^10.9.2"
+  }
+}
